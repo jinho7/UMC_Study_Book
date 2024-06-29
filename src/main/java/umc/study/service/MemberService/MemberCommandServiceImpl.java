@@ -10,7 +10,7 @@ import umc.study.converter.MemberPreferConverter;
 import umc.study.domain.FoodCategory;
 import umc.study.domain.Member;
 import umc.study.domain.mapping.MemberPrefer;
-import umc.study.dto.request.MemberRequestDTO;
+import umc.study.web.dto.request.MemberRequestDTO;
 import umc.study.repository.FoodCategoryRepository;
 import umc.study.repository.MemberRepository;
 
