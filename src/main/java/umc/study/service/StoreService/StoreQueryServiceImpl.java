@@ -29,11 +29,9 @@ public class StoreQueryServiceImpl implements StoreQueryService{
     }
 
     @Override
-    public StoreResponseDTO.ReviewPreViewListDTO getReviewList(Long StoreId, Integer page) {
+    public StoreResponseDTO.ReviewPreViewListDTO getReviewList(Long storeId, Integer page) {
 
-        Store store = storeRepository.findById(StoreId).get();
-
-        Page<Review> StorePage = reviewRepository.findAllByStore(store, PageRequest.of(page, 10));
+        Page<Review> StorePage = reviewRepository.findReviewsByStoreId(storeId, PageRequest.of(page, 10));
 
         return StoreConverter.reviewPreViewListDTO(StorePage);
     }
