@@ -1,4 +1,4 @@
-package umc.study.controller;
+package umc.study.web.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import umc.study.apiPayload.ApiResponse;
 import umc.study.converter.MemberConverter;
 import umc.study.domain.Member;
-import umc.study.dto.request.MemberRequestDTO;
-import umc.study.dto.response.MemberResponseDTO;
+import umc.study.web.dto.request.MemberRequestDTO;
+import umc.study.web.dto.response.MemberResponseDTO;
 import umc.study.service.MemberService.MemberCommandService;
 
 @RestController
